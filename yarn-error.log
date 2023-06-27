@@ -1,0 +1,53 @@
+Arguments: 
+  /Users/watson/.nvm/versions/node/v14.17.0/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js
+
+PATH: 
+  /opt/homebrew/opt/mysql@5.7/bin:/usr/local/opt/mysql@5.7/bin:/usr/local/mongodb/bin:/Users/watson/miniconda3/bin:/Users/watson/miniconda3/condabin:/Users/watson/.pyenv/shims:/Users/watson/.pyenv/bin:/opt/homebrew/bin:/Users/watson/.nvm/versions/node/v14.17.0/bin:/Users/watson/flutter/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/watson/Desktop/map/node_modules/.bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  14.17.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  SyntaxError: /Users/watson/Library/Caches/Yarn/v6/npm-combined-stream-1.0.8-c3d45a8b34fd730631a110a8a2520682b31d5a7f-integrity/node_modules/combined-stream/.yarn-metadata.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:310:30)
+      at /opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "map",
+    "version": "0.0.0",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview"
+    },
+    "dependencies": {
+      "@googlemaps/js-api-loader": "^1.16.2",
+      "@mdi/font": "7.0.96",
+      "axios": "^1.4.0",
+      "roboto-fontface": "*",
+      "vue": "^3.2.0",
+      "vuetify": "^3.0.0",
+      "webfontloader": "^1.0.0"
+    },
+    "devDependencies": {
+      "@vitejs/plugin-vue": "^4.0.0",
+      "vite": "^4.2.0",
+      "vite-plugin-vuetify": "^1.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
