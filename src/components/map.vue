@@ -55,6 +55,7 @@ export default {
   name: 'LocationSearch',
   data() {
     return {
+      mapkey:"",
       pageNum: 1,
       pageSize: 10,
       loading: false,
@@ -100,7 +101,7 @@ export default {
     * */
     searchLocation() {
       if (this.searchQuery) {
-        axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${this.searchQuery}&key=AIzaSyAtCgHsNw_NrVT4mMQ1oAA9b8C0UaFMOz8`)
+        axios.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${this.searchQuery}&key=${this.mapkey}`)
           .then(response => {
             const {results} = response.data;
             if (results && results.length > 0) {
